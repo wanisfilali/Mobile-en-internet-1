@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekverslag</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <button class="tablink" onclick="openPage('week1')" id="defaultOpen">Week 1</button>
+    <button class="tablink" onclick="openPage('week2')">Week 2</button>
+    <button class="tablink" onclick="openPage('week3')">Week 3</button>
+    <button class="tablink" onclick="openPage('week4')">Week 4</button>
+    <button class="tablink" onclick="openPage('week5')">Week 5</button>
+    <button class="tablink" onclick="openPage('week6')">Week 6</button>
+    <button class="tablink" onclick="openPage('week7')">Week 7</button>
+    <button class="tablink" onclick="openPage('week8')">Week 8</button>
+    <button class="tablink" onclick="openPage('week9')">Week 9</button>
+    <button class="tablink" onclick="openPage('week10')">Week 10</button>
+    <button class="tablink" onclick="openPage('week11')">Week 11</button>
+    <button class="tablink" onclick="openPage('week12')">Week 12</button>
+
+    <div id="week1" class="tabcontent">
+        <h3>Week 1</h3>
+        <p>Voor de eerste week ben ik op zoek naar een klant die een website wilt. Voor mijn eerste week heb ik geen "goeie" klant gevonden. De meeste wouden een "welkom pagina" en geen Website ofwel vroegen ze een design te maken voor hun pagina maar ik ben nog niet opgeleid voor design.</p>
+    </div>
+
+    <div id="week2" class="tabcontent">
+        <h3>Week 2</h3>
+        <p>Voor de 2de week kon ik niets doen omdat mijn vader overleden was. Ik moest veel doen en was afwezig voor deze week.</p>
+    </div>
+
+    <div id="week3" class="tabcontent">
+        <h3>Week 3</h3>
+        <p>Tijdens de 3de week heb ik een klant gevonden die wel een website wou. Het is voor een gaming winkel die spelletjes verkoopt, consoles hersteld en van alles koopt.
+        De klant wou een website met een database waarin hij alles in kan zetten en producten/news/etc... tonen enz...</p>
+    </div>
+
+    <div id="week4" class="tabcontent">
+        <h3>Week 4</h3>
+        <p>Deze week heb ik alle lessen die ik gemist had doorgelopen en mijn oefeningen gemaakt.</p>
+    </div>
+    <div id="week5" class="tabcontent">
+        <h3>Week 5</h3>
+        <p>Voor deze week ben ik begonnen aan het natedenken over mijn website. Ik begon met het index pagina begonnen ik had nog geen beeld en moest photo's gaan nemen.</p>
+    </div>
+
+    <div id="week6" class="tabcontent">
+        <h3>Week 6</h3>
+        <p>Voor deze week heb ik mijn CSS afgemaakt en begon idées over te nemen van mijn eindjaarsproject(6IB) over te nemen. en heb die in de website toegepast.</p>
+    </div>
+
+    <div id="week7" class="tabcontent">
+        <h3>Week 7</h3>
+        <p>Ik heb alle andere webpaginas gemaakt en moet die nog verbeteren.</p>
+    </div>
+
+    <div id="week8" class="tabcontent">
+        <h3>Week 8</h3>
+        <p>Voor deze week moest ik normaal gezien mijn pagina's verbeteren maar ik had een paar dingens ingezet van W3schools in mijn website en aangepast voor het doel dat ik wou.</p>
+        <p>hier is de link die ik gebruikt had.
+            alle thema's die ik heb bekeken/gebruikt als doel om functioneel te zetten in mijn website:
+            https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+        </p>
+    </div>
+    <div id="week9" class="tabcontent">
+        <h3>Week 9</h3>
+        <p>Voor deze week heb ik mijn php pagina's gemaakt en de databank voor de artikels die zullen ingezet worden. De Klant kan via de databank zijn photo's en alles wat hij zal verkopen in zetten. Ze zijn in meerdere tabellen gezet: console,jeux en accessoires. zo is het gemakelijker om iets te vinden voor de gebruiker van de website.</p>
+    </div>
+
+    <div id="week10" class="tabcontent">
+        <h3>Week 10</h3>
+        <p>deze week heb ik mijn website online gezet op 000webhost. Geen visuele probleem gevonden.</p>
+    </div>
+
+    <div id="week11" class="tabcontent">
+        <h3>Week 11</h3>
+        <p>Deze week heb ik alles op total validator gecheckt maar het skip link lukte me niet ik had het gemaakt maar ik krijg een grotere foutmelding. Ik heb het afgezet daarna heb ik mijn css gecheckt en de foutjes eruit gehaald.</p>
+    </div>
+
+    <div id="week12" class="tabcontent">
+        <h3>Week 12</h3>
+        <p>Deze week ben ik bij de klant geweest en hij heeft me gevraagd om de formulier van het site weg te halen. Hij wou gewoon per gsm gecontacteerd worden of ter plaats. De rest van het website heeft hij goedgekeurd.</p>
+    </div>
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
