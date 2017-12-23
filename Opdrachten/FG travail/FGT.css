@@ -409,7 +409,6 @@ table tr:nth-child(2n+1) {
 /*-----------------------footer--------------------------*/
 
 .specialfooter {
-    position: sticky;
     left: 0;
     bottom: 0;
     display: block;
@@ -563,7 +562,6 @@ Ul {
 	font-size: 15px;
 }
 	.specialfooter {
-     position: sticky;
     left: 0;
 		
     bottom: -1px;
@@ -843,7 +841,6 @@ Ul {
 	font-size: 15px;
 }
 	.specialfooter {
-     position: sticky;
     left: 0;
     bottom: -1px;
     width: 100%;
@@ -860,12 +857,9 @@ Ul {
 	border-radius: 40%;
 }
 
-
-@media screen and (min-width: 1280px) {}
+@media screen and (max-width: 1024px) {
     
-@media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
-}
-
+    }
